@@ -1,0 +1,27 @@
+(* Alguns testes do desafio *)
+
+Standard ML of New Jersey v110.79 [built: Tue Aug  8 23:21:20 2017]
+[opening desafio.sml]
+val divisivel = fn : int * int -> bool
+val bissexto = fn : int -> bool
+val positivo = fn : int -> bool
+val positivo1 = fn : int * int * int -> bool
+val limite_meses = fn : int -> bool
+val data_real = fn : int * int * int -> bool
+- data_real(10,02,2000);
+val it = true : bool
+- data_real(~10,02,2000);
+val it = false : bool
+- data_real(10,30,2000);
+val it = false : bool
+- data_real(31,01,2000);
+val it = true : bool
+- data_real(31,02,2000);
+val it = false : bool
+- data_real(42,04,2020);
+val it = false : bool
+- data_real(29,02,2020);
+val it = true : bool
+- data_real(29,02,2019);
+val it = false : bool
+-

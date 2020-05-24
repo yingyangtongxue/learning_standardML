@@ -1,0 +1,37 @@
+
+(* Alguns testes do funcionamento da função mais_velho2() *)
+
+Standard ML of New Jersey v110.79 [built: Tue Aug  8 23:21:20 2017]
+[opening funcoes.sml]
+val d1 = 10 : int
+val m1 = 1 : int
+val a1 = 2001 : int
+val d2 = 20 : int
+val m2 = 4 : int
+val a2 = 2010 : int
+val positivo = fn : int -> bool
+val positivo1 = fn : (int * int * int) * (int * int * int) -> bool
+val verifica_data = fn : (int * int * int) * (int * int * int) -> bool
+val igual = fn : (int * int * int) * (int * int * int) -> bool
+val mais_velho = fn : (int * int * int) * (int * int * int) -> bool
+val mais_velho2 = fn : (int * int * int) * (int * int * int) -> bool
+val it = true : bool
+val it = true : bool
+- mais_velho2((10,02,2000),(20,04,2018));
+val it = true : bool
+- mais_velho2((20,04,2018),(10,02,2000));    
+val it = false : bool
+val it = false : bool
+- mais_velho2((50,02,2000),(20,04,2018));    
+val it = false : bool
+- mais_velho2((10,21,2000),(20,04,2018));
+val it = false : bool
+- mais_velho2((10,02,100000),(20,04,2018));
+val it = false : bool
+- mais_velho2((0,0,0),(20,04,2018));     
+val it = false : bool
+- mais_velho2((~10,02,2000),(20,04,2018));   
+val it = false : bool
+- mais_velho2((20,04,2018),(20,04,2018));
+val it = false : bool
+-
